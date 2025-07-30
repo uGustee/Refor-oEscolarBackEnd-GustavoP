@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSystem - Plataforma Educacional</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="light-theme">
+    <!-- Barra de Navegação Acessível -->
+    <nav class="navbar" aria-label="Navegação principal">
+        <div class="navbar-container">
+            <a href="#" class="logo">EduSystem</a>
+            
+            <button class="menu-toggle" aria-expanded="false" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="#dashboard"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="#alunos"><i class="fas fa-users"></i> Alunos</a></li>
+                <li><a href="#disciplinas"><i class="fas fa-book"></i> Disciplinas</a></li>
+                <li><a href="#exercicios"><i class="fas fa-tasks"></i> Exercícios</a></li>
+                <li><a href="#progresso"><i class="fas fa-chart-line"></i> Progresso</a></li>
+                <li><a href="#avaliacoes"><i class="fas fa-clipboard-check"></i> Avaliações</a></li>
+            </ul>
+            
+            <div class="user-controls">
+                <button class="theme-switcher" aria-label="Alternar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="user-profile">
+                    <img src="assets/icons/user-default.png" alt="Perfil do usuário">
+                    <span>Usuário</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <!-- Dashboard -->
+        <section id="dashboard" class="dashboard-section">
+            <h1>Dashboard</h1>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Alunos</h3>
+                    <p>120</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Disciplinas</h3>
+                    <p>8</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-tasks"></i>
+                    <h3>Exercícios</h3>
+                    <p>245</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Progresso Médio</h3>
+                    <p>78%</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Alunos -->
+        <section id="alunos" class="data-section">
+            <div class="section-header">
+                <h2>Alunos</h2>
+                <button class="btn btn-primary" id="add-aluno">
+                    <i class="fas fa-plus"></i> Adicionar Aluno
+                </button>
+            </div>
+            
+            <div class="filter-bar">
+                <input type="text" placeholder="Buscar aluno..." aria-label="Buscar aluno">
+                <select aria-label="Filtrar por série">
+                    <option>Todas as séries</option>
+                    <option>1º Ano</option>
+                    <option>2º Ano</option>
+                </select>
+            </div>
+            
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Série</th>
+                            <th>Progresso</th>
+                            <th>Pontos</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>João Silva</td>
+                            <td>5º Ano</td>
+                            <td>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                                <span class="sr-only">75% completo</span>
+                            </td>
+                            <td>1,250</td>
+                            <td>
+                                <button class="btn-icon" aria-label="Editar"><i class="fas fa-edit"></i></button>
+                                <button class="btn-icon" aria-label="Ver progresso"><i class="fas fa-chart-line"></i></button>
+                            </td>
+                        </tr>
+                        <!-- Mais linhas de alunos -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Modal de Confirmação (exemplo) -->
+        <div class="modal" id="confirmation-modal" aria-hidden="true">
+            <div class="modal-content">
+                <h3>Confirmar ação</h3>
+                <p>Tem certeza que deseja excluir este aluno?</p>
+                <div class="modal-actions">
+                    <button class="btn btn-secondary" id="cancel-btn">Cancelar</button>
+                    <button class="btn btn-danger" id="confirm-btn">Confirmar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedback Toast (exemplo) -->
+        <div class="toast" id="feedback-toast" aria-live="polite">
+            <div class="toast-content">
+                <i class="fas fa-check-circle"></i>
+                <p>Aluno adicionado com sucesso!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2023 EduSystem. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme-switcher.js"></script>
+</body>
+</html>
