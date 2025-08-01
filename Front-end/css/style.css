@@ -1,0 +1,40 @@
+.botao-menu-mobile {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--cor-primaria);
+    cursor: pointer;
+}
+
+.modo-escuro {
+    --cor-texto: #f8f9fa;
+    --cor-fundo: #212529;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+@media (max-width: 768px) {
+    .botao-menu-mobile {
+        display: block;
+    }
+    
+    .menu-principal {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--cor-branco);
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .menu-principal ul {
+        flex-direction: column;
+    }
+    
+    body.modo-escuro .menu-principal {
+        background: var(--cor-fundo);
+    }
+}
