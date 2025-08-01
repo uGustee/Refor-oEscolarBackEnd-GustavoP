@@ -1,0 +1,77 @@
+/* exercicios.css */
+.secao-exercicios {
+    padding: 2rem 0;
+}
+
+.filtros-exercicios {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.filtros-exercicios select {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    min-width: 200px;
+}
+
+.lista-exercicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.cartao-exercicio {
+    background: var(--cor-branco);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: var(--sombra-card);
+    transition: transform 0.3s;
+}
+
+.cartao-exercicio:hover {
+    transform: translateY(-5px);
+}
+
+.cartao-exercicio h3 {
+    margin-bottom: 1rem;
+    color: var(--cor-primaria);
+}
+
+.metadados {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.metadados span {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.metadados .disciplina {
+    background-color: rgba(67, 97, 238, 0.1);
+    color: var(--cor-primaria);
+}
+
+.metadados .nivel {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: var(--cor-sucesso);
+}
+
+@media (max-width: 768px) {
+    .lista-exercicios {
+        grid-template-columns: 1fr;
+    }
+    
+    .filtros-exercicios {
+        flex-direction: column;
+    }
+    
+    .filtros-exercicios select {
+        width: 100%;
+    }
+}
