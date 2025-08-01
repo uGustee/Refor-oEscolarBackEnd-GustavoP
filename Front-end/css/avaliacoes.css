@@ -1,0 +1,11 @@
+.secao-avaliacoes {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.calendario-avaliacoes {
+    background: var(--cor-branco);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
