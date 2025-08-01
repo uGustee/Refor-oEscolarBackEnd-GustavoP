@@ -1,0 +1,90 @@
+/* conteudos.css */
+.secao-conteudos {
+    padding: 2rem 0;
+}
+
+.cabecalho-secao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.filtros-conteudo {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    background: var(--cor-branco);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.filtros-conteudo select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+}
+
+.grade-conteudos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.cartao-conteudo {
+    background: var(--cor-branco);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.cartao-conteudo:hover {
+    transform: translateY(-5px);
+}
+
+.cabecalho-conteudo {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.cabecalho-conteudo h3 {
+    margin: 0;
+    color: var(--cor-primaria);
+}
+
+.corpo-conteudo {
+    padding: 1rem;
+}
+
+.rodape-conteudo {
+    padding: 1rem;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Modal específico para conteúdos */
+#modal-conteudo .conteudo-modal {
+    max-width: 600px;
+}
+
+.grupo-formulario-duplo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .grade-conteudos {
+        grid-template-columns: 1fr;
+    }
+    
+    .grupo-formulario-duplo {
+        grid-template-columns: 1fr;
+    }
+    
+    .filtros-conteudo {
+        flex-direction: column;
+    }
+}
