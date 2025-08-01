@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestão de Alunos | Estuda+</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/alunos.css">
+</head>
+<body>
+    <!-- Barra de navegação consistente (igual às outras páginas) -->
+    
+    <main class="container">
+        <section class="secao-alunos">
+            <h1><i class="fas fa-user-graduate"></i> Gestão de Alunos</h1>
+            
+            <div class="filtros-alunos">
+                <input type="text" id="busca-aluno" placeholder="Buscar aluno...">
+                <select id="filtro-serie">
+                    <option value="">Todas as séries</option>
+                    <option value="1">1º Ano</option>
+                    <!-- Outras séries -->
+                </select>
+            </div>
+
+            <div class="tabela-alunos">
+                <!-- Dados serão preenchidos via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/alunos.js"></script>
+</body>
+</html>
