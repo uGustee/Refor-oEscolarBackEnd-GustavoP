@@ -1,0 +1,60 @@
+:root {
+    --cor-primaria: #4361ee;
+    --cor-secundaria: #3f37c9;
+    --cor-texto: #212529;
+    --cor-texto-claro: #6c757d;
+    --cor-fundo: #f8f9fa;
+    --cor-branco: #ffffff;
+    --cor-matematica: #ff6b6b;
+    --cor-portugues: #4ecdc4;
+    --cor-sucesso: #28a745;
+    --cor-aviso: #ffc107;
+    --sombra-card: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.botao-primario {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+}
+
+.barra-navegacao {
+    background-color: var(--cor-branco);
+    box-shadow: var(--sombra-card);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Adicione aqui os estilos comuns a todas as páginas */
