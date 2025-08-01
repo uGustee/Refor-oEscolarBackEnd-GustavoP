@@ -1,0 +1,16 @@
+.secao-utilhas {
+    padding: 2rem 0;
+}
+
+.lista-utilhas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.cartao-utilha {
+    background: var(--cor-branco);
+    border-left: 4px solid var(--cor-primaria);
+    padding: 1.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
