@@ -1,0 +1,72 @@
+/* alunos.css */
+.secao-alunos {
+    padding: 2rem 0;
+}
+
+.filtros-alunos {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.filtros-alunos input,
+.filtros-alunos select {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    min-width: 250px;
+}
+
+.tabela-alunos {
+    background: var(--cor-branco);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: var(--sombra-card);
+}
+
+.cabecalho-tabela {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr auto;
+    padding: 1rem;
+    background-color: var(--cor-primaria);
+    color: white;
+    font-weight: 500;
+}
+
+.linha-aluno {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr auto;
+    padding: 1rem;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.linha-aluno:last-child {
+    border-bottom: none;
+}
+
+.botao-editar {
+    background: none;
+    border: none;
+    color: var(--cor-primaria);
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .cabecalho-tabela,
+    .linha-aluno {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .filtros-alunos {
+        flex-direction: column;
+    }
+    
+    .filtros-alunos input,
+    .filtros-alunos select {
+        width: 100%;
+    }
+}
