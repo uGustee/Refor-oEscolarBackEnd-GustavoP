@@ -9,40 +9,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="barra-navegacao">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <i class="fas fa-book-open"></i>
-                <h1>Estuda+</h1>
-            </a>
-            <button class="botao-menu-mobile">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="menu-principal" id="menu-principal">
-                <ul>
-                    <li><a href="index.html" class="ativo"><i class="fas fa-home"></i> Início</a></li>
-                    <li><a href="conteudos.html"><i class="fas fa-book"></i> Conteúdos</a></li>
-                    <li><a href="relatorios.html"><i class="fas fa-chart-line"></i> Relatórios</a></li>
-                    <li><a href="responsaveis.html"><i class="fas fa-user-shield"></i> Responsáveis</a></li>
-                </ul>
-                <div class="perfil-usuario">
-                    <div class="avatar">
-                        <img src="images/avatar.png" alt="Foto do perfil">
-                    </div>
-                    <div class="info-usuario">
-                        <span class="nome-usuario">João Silva</span>
-                        <span class="tipo-usuario">Aluno</span>
-                    </div>
-                    <button class="botao-sair">
-                        <i class="fas fa-sign-out-alt"></i>
-                    </button>
-                </div>
-                <button class="alternador-tema">
-                    <i class="fas fa-moon"></i>
-                </button>
+    <nav class="navbar">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <i class="fas fa-book-open"></i>
+            <span>Estuda+</span>
+        </a>
+        
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="nav-links">
+            <a href="alunos.html"><i class="fas fa-users"></i> Alunos</a>
+            <a href="responsaveis.html"><i class="fas fa-user-shield"></i> Responsáveis</a>
+            <a href="disciplinas.html"><i class="fas fa-book"></i> Disciplinas</a>
+            <a href="exercicios.html"><i class="fas fa-tasks"></i> Exercícios</a>
+            <a href="conteudos.html"><i class="fas fa-file-alt"></i> Conteúdos</a>
+            <a href="avaliacoes.html"><i class="fas fa-clipboard-check"></i> Avaliações</a>
+            <a href="relatorios.html"><i class="fas fa-chart-bar"></i> Relatórios</a>
+            
+            <div class="user-menu">
+                <img src="images/avatar.png" alt="Perfil">
+                <span>Professor</span>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <main class="container">
         <section class="destaque">
